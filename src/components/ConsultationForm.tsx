@@ -106,7 +106,7 @@ export default function ConsultationForm() {
                     <label className="text-[10px] font-black text-white/70 uppercase tracking-[0.15em] ml-1">Full Name</label>
                     <input
                         name="name"
-                        className={`w-full bg-white/[0.04] border ${errors.name ? 'border-red-500' : 'border-white/10'} rounded-xl px-4 py-3 text-sm text-white placeholder:text-white/30 focus:ring-2 focus:ring-primary/60 focus:bg-white/[0.08] focus:border-white/20 outline-none transition-all`}
+                        className={`w-full bg-white/10 border ${errors.name ? 'border-red-500' : 'border-white/20'} rounded-xl px-4 py-3 text-sm text-white placeholder:text-white/40 focus:ring-2 focus:ring-primary/60 focus:bg-white/20 focus:border-white/30 outline-none transition-all`}
                         placeholder="Enter your full name"
                         type="text"
                         value={formData.name}
@@ -120,7 +120,7 @@ export default function ConsultationForm() {
                     <label className="text-[10px] font-black text-white/70 uppercase tracking-[0.15em] ml-1">Phone Number</label>
                     <input
                         name="phone"
-                        className={`w-full bg-white/[0.04] border ${errors.phone ? 'border-red-500' : 'border-white/10'} rounded-xl px-4 py-3 text-sm text-white placeholder:text-white/30 focus:ring-2 focus:ring-primary/60 focus:bg-white/[0.08] focus:border-white/20 outline-none transition-all`}
+                        className={`w-full bg-white/10 border ${errors.phone ? 'border-red-500' : 'border-white/20'} rounded-xl px-4 py-3 text-sm text-white placeholder:text-white/40 focus:ring-2 focus:ring-primary/60 focus:bg-white/20 focus:border-white/30 outline-none transition-all`}
                         placeholder="+1 (555) 000-0000"
                         type="tel"
                         value={formData.phone}
@@ -135,7 +135,7 @@ export default function ConsultationForm() {
                         <label className="text-[10px] font-black text-white/70 uppercase tracking-[0.15em] ml-1">Email</label>
                         <input
                             name="email"
-                            className="w-full bg-white/[0.04] border border-white/10 rounded-xl px-4 py-3 text-sm text-white placeholder:text-white/30 focus:ring-2 focus:ring-primary/60 focus:bg-white/[0.08] focus:border-white/20 outline-none transition-all"
+                            className="w-full bg-white/10 border border-white/20 rounded-xl px-4 py-3 text-sm text-white placeholder:text-white/40 focus:ring-2 focus:ring-primary/60 focus:bg-white/20 focus:border-white/30 outline-none transition-all"
                             placeholder="email@example.com"
                             type="email"
                             value={formData.email}
@@ -146,7 +146,7 @@ export default function ConsultationForm() {
                         <label className="text-[10px] font-black text-white/70 uppercase tracking-[0.15em] ml-1">City</label>
                         <input
                             name="city"
-                            className="w-full bg-white/[0.04] border border-white/10 rounded-xl px-4 py-3 text-sm text-white placeholder:text-white/30 focus:ring-2 focus:ring-primary/60 focus:bg-white/[0.08] focus:border-white/20 outline-none transition-all"
+                            className="w-full bg-white/10 border border-white/20 rounded-xl px-4 py-3 text-sm text-white placeholder:text-white/40 focus:ring-2 focus:ring-primary/60 focus:bg-white/20 focus:border-white/30 outline-none transition-all"
                             placeholder="Your City"
                             type="text"
                             value={formData.city}
@@ -162,17 +162,17 @@ export default function ConsultationForm() {
                         <div className="relative">
                             <select
                                 name="destination"
-                                className={`w-full bg-white/[0.04] border ${errors.destination ? 'border-red-500' : 'border-white/10'} rounded-xl px-4 py-3 text-sm text-white focus:ring-2 focus:ring-primary/60 focus:bg-white/[0.08] focus:border-white/20 outline-none transition-all appearance-none cursor-pointer`}
+                                className={`w-full bg-white/10 border ${errors.destination ? 'border-red-500' : 'border-white/20'} rounded-xl px-4 py-3 text-sm text-white focus:ring-2 focus:ring-primary/60 focus:bg-white/20 focus:border-white/30 outline-none transition-all appearance-none cursor-pointer`}
                                 value={formData.destination}
                                 onChange={(e) => setFormData({ ...formData, destination: e.target.value })}
                             >
-                                <option value="" className="bg-slate-900">Select Destination</option>
-                                <option value="uk" className="bg-slate-900">United Kingdom</option>
-                                <option value="usa" className="bg-slate-900">USA</option>
-                                <option value="canada" className="bg-slate-900">Canada</option>
-                                <option value="australia" className="bg-slate-900">Australia</option>
+                                <option value="">Select Destination</option>
+                                <option value="uk">United Kingdom</option>
+                                <option value="usa">USA</option>
+                                <option value="canada">Canada</option>
+                                <option value="australia">Australia</option>
                             </select>
-                            <span className="material-symbols-outlined absolute right-3 top-1/2 -translate-y-1/2 text-white/30 pointer-events-none text-lg">expand_more</span>
+                            <span className="material-symbols-outlined absolute right-3 top-1/2 -translate-y-1/2 text-white/40 pointer-events-none text-lg">expand_more</span>
                         </div>
                     </div>
                     <div className="space-y-1.5">
@@ -180,16 +180,16 @@ export default function ConsultationForm() {
                         <div className="relative">
                             <select
                                 name="qualification"
-                                className="w-full bg-white/[0.04] border border-white/10 rounded-xl px-4 py-3 text-sm text-white focus:ring-2 focus:ring-primary/60 focus:bg-white/[0.08] focus:border-white/20 outline-none transition-all appearance-none cursor-pointer"
+                                className="w-full bg-white/10 border border-white/20 rounded-xl px-4 py-3 text-sm text-white focus:ring-2 focus:ring-primary/60 focus:bg-white/20 focus:border-white/30 outline-none transition-all appearance-none cursor-pointer"
                                 value={formData.qualification}
                                 onChange={(e) => setFormData({ ...formData, qualification: e.target.value })}
                             >
-                                <option value="" className="bg-slate-900">Select Level</option>
-                                <option value="high-school" className="bg-slate-900">High School</option>
-                                <option value="undergraduate" className="bg-slate-900">Undergraduate</option>
-                                <option value="postgraduate" className="bg-slate-900">Postgraduate</option>
+                                <option value="">Select Level</option>
+                                <option value="high-school">High School</option>
+                                <option value="undergraduate">Undergraduate</option>
+                                <option value="postgraduate">Postgraduate</option>
                             </select>
-                            <span className="material-symbols-outlined absolute right-3 top-1/2 -translate-y-1/2 text-white/30 pointer-events-none text-lg">expand_more</span>
+                            <span className="material-symbols-outlined absolute right-3 top-1/2 -translate-y-1/2 text-white/40 pointer-events-none text-lg">expand_more</span>
                         </div>
                     </div>
                 </div>
@@ -201,15 +201,15 @@ export default function ConsultationForm() {
                         <div className="relative">
                             <select
                                 name="ielts"
-                                className="w-full bg-white/[0.04] border border-white/10 rounded-xl px-4 py-3 text-sm text-white focus:ring-2 focus:ring-primary/60 focus:bg-white/[0.08] focus:border-white/20 outline-none transition-all appearance-none cursor-pointer"
+                                className="w-full bg-white/10 border border-white/20 rounded-xl px-4 py-3 text-sm text-white focus:ring-2 focus:ring-primary/60 focus:bg-white/20 focus:border-white/30 outline-none transition-all appearance-none cursor-pointer"
                                 value={formData.ielts}
                                 onChange={(e) => setFormData({ ...formData, ielts: e.target.value })}
                             >
-                                <option value="not-started" className="bg-slate-900">Not Started</option>
-                                <option value="preparing" className="bg-slate-900">Preparing</option>
-                                <option value="taken" className="bg-slate-900">Taken</option>
+                                <option value="not-started">Not Started</option>
+                                <option value="preparing">Preparing</option>
+                                <option value="taken">Taken</option>
                             </select>
-                            <span className="material-symbols-outlined absolute right-3 top-1/2 -translate-y-1/2 text-white/30 pointer-events-none text-lg">expand_more</span>
+                            <span className="material-symbols-outlined absolute right-3 top-1/2 -translate-y-1/2 text-white/40 pointer-events-none text-lg">expand_more</span>
                         </div>
                     </div>
                     <div className="space-y-1.5">
@@ -217,15 +217,15 @@ export default function ConsultationForm() {
                         <div className="relative">
                             <select
                                 name="intake"
-                                className="w-full bg-white/[0.04] border border-white/10 rounded-xl px-4 py-3 text-sm text-white focus:ring-2 focus:ring-primary/60 focus:bg-white/[0.08] focus:border-white/20 outline-none transition-all appearance-none cursor-pointer"
+                                className="w-full bg-white/10 border border-white/20 rounded-xl px-4 py-3 text-sm text-white focus:ring-2 focus:ring-primary/60 focus:bg-white/20 focus:border-white/30 outline-none transition-all appearance-none cursor-pointer"
                                 value={formData.intake}
                                 onChange={(e) => setFormData({ ...formData, intake: e.target.value })}
                             >
-                                <option value="fall" className="bg-slate-900">Fall</option>
-                                <option value="spring" className="bg-slate-900">Spring</option>
-                                <option value="next-year" className="bg-slate-900">Next Year</option>
+                                <option value="fall">Fall</option>
+                                <option value="spring">Spring</option>
+                                <option value="next-year">Next Year</option>
                             </select>
-                            <span className="material-symbols-outlined absolute right-3 top-1/2 -translate-y-1/2 text-white/30 pointer-events-none text-lg">expand_more</span>
+                            <span className="material-symbols-outlined absolute right-3 top-1/2 -translate-y-1/2 text-white/40 pointer-events-none text-lg">expand_more</span>
                         </div>
                     </div>
                 </div>
