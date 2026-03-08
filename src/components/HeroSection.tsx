@@ -10,12 +10,12 @@ export default function HeroSection() {
             <div className="absolute inset-0 z-0">
                 <Image
                     alt="Study Abroad Background"
-                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuA-fmPRnxkNYgEheDQZhBNuSDFwsu2XY5ethWQ2lFz9rEKe7Ig4f5HLcqSuQMHIz6AmT5O9EbaF54if7cRToaMso5YZwIwM4HaYoBrbwZWwdw-LzKZ90aNgxBteeDQIO__5M7BW6C-WL-bVD4nPtatLE5cA5-Hp-XXTDS73A2Ia4ICm5LOWxuGImMuJ-0qBUK43jAVkeWzw4qY_vUCmr5AN-pgjP4-1FDmqSKckvZT5zvm_fHiiNfcpjKGdskbgNn7ZajZtaeg2VMI"
+                    src="/hero-background.png"
                     fill
                     priority
-                    className="object-cover opacity-40 md:opacity-50"
+                    className="object-cover opacity-60 md:opacity-70"
                 />
-                <div className="absolute inset-0 bg-gradient-to-b from-background-dark/80 via-transparent to-background-dark"></div>
+                <div className="absolute inset-0 bg-gradient-to-b from-background-dark/60 via-transparent to-background-dark"></div>
             </div>
 
             <div className="max-w-7xl mx-auto w-full grid grid-cols-1 lg:grid-cols-2 gap-16 items-center relative z-10">
